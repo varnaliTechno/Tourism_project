@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/place1"
+        android:scaleType="centerCrop"
+        android:foreground="#791D1C1C"
+        />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:text="Category"
+                android:gravity="center"
+                android:maxLines="2"
+                />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+
+                android:textSize="18dp"
+                android:text="Price"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/pack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:text="Package"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
